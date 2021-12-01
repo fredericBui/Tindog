@@ -15,29 +15,29 @@
 
     <!--Formulaire-->
     <div class="container py-5" style="background-color:beige">
-      <form>
+      <form action="profil.html" method="post">
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="inputEmail4">Email</label>
-            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+            <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required="required">
           </div>
           <div class="form-group col-md-6">
             <label for="inputPassword4">Mot de passe</label>
-            <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+            <input type="password" class="form-control" id="inputPassword4" placeholder="Password" required="required">
           </div>
         </div>
         <div class="form-group">
           <label for="inputAddress">Address</label>
-          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Dog Street">
+          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Dog Street" required="required">
         </div>
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="inputCity">Ville</label>
-            <input type="text" class="form-control" id="inputCity">
+            <input type="text" class="form-control" id="inputCity" required="required">
           </div>
           <div class="form-group col-md-4">
             <label for="inputState">Pays</label>
-            <select id="inputState" class="form-control">
+            <select id="inputState" class="form-control" required="required">
               <option selected>Choisir...</option>
               <option>France</option>
               <option>Amérique</option>
@@ -46,22 +46,21 @@
           </div>
           <div class="form-group col-md-2">
             <label for="inputZip">Code postal</label>
-            <input type="text" class="form-control" id="inputZip">
+            <input type="number" class="form-control" id="inputZip" required="required">
           </div>
         </div>
         <div class="form-group">
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <input class="form-check-input" type="checkbox" id="gridCheck" required="required">
             <label class="form-check-label" for="gridCheck">
               Je ne suis pas un humain
             </label>
           </div>
         </div>
-        <a class="btn btn-secondary btn-block" href="profil.html" role="button">S'inscrire</a>
+        <button class="btn btn-secondary btn-block" type="submit">S'inscrire</button>
       </form>
     </div>
     
-
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
     <script src="script.js"></script>
